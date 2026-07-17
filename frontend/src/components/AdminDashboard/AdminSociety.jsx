@@ -22,7 +22,6 @@ const AdminSocietiesPage = () => {
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
   const [loading, setLoading] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState('All');
 
   const categories = ['Academic', 'Cultural', 'Sports', 'Technical', 'Social', 'Arts', 'Entrepreneurship', 'Other'];
 
@@ -79,18 +78,11 @@ const AdminSocietiesPage = () => {
         name: '',
         head: '',
         contact: '',
-        website: '',
         description: '',
         category: '',
         location: '',
         establishedYear: '',
         membersCount: '',
-        socialLinks: {
-          instagram: '',
-          linkedin: '',
-          twitter: '',
-          youtube: ''
-        }
       });
       
       load();
@@ -134,15 +126,6 @@ const AdminSocietiesPage = () => {
     setSuccess('');
   };
 
-  const handleSocialChange = (platform, value) => {
-    setForm({
-      ...form,
-      socialLinks: {
-        ...form.socialLinks,
-        [platform]: value
-      }
-    });
-  };
 
   const handleCancel = () => {
     setEditId(null);
@@ -150,18 +133,11 @@ const AdminSocietiesPage = () => {
       name: '',
       head: '',
       contact: '',
-      website: '',
       description: '',
       category: '',
       location: '',
       establishedYear: '',
       membersCount: '',
-      socialLinks: {
-        instagram: '',
-        linkedin: '',
-        twitter: '',
-        youtube: ''
-      }
     });
     setError('');
     setSuccess('');
