@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { societiesAPI } from '../../api';
-import { 
-  Users, Phone, UserCircle, Mail,  MapPin, ExternalLink, 
-  Calendar, 
-  Users as UsersIcon, Building 
+import { Users, UserCircle, MapPin, Calendar, Users as UsersIcon
 } from 'lucide-react';
 
 const UserSocietiesPage = () => {
