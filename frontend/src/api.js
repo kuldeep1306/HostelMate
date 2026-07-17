@@ -1,7 +1,7 @@
 // Central API service — replaces Firebase completely
 // All requests go to Express backend at localhost:5000
 
-const BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000/api';
+const BASE_URL = process.env.REACT_APP_API_URL || 'https://hostelmate-1-owit.onrender.com';
 
 // ─── Token helpers ────────────────────────────────────────────────────────────
 export const getToken  = ()           => localStorage.getItem('hm_token');
